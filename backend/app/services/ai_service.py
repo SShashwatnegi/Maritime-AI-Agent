@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 # ✅ Load .env first
 load_dotenv()
-
+async def ask_ai(prompt: str, max_tokens: int = 256):
 # ✅ Read the API key properly
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
@@ -16,9 +16,10 @@ llm = ChatGoogleGenerativeAI(
     temperature=0
 )
 
-async def ask_ai(prompt: str, max_tokens: int = 256):
+
     try:
         response = await llm.ainvoke(prompt)
         return response.content if hasattr(response, "content") else str(response)
     except Exception as e:
         return f"AI error: {e}"
+
