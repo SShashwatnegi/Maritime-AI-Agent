@@ -10,8 +10,8 @@ google-generativeai==0.8.5   # Gemini API
 
 # LangChain + LlamaIndex
 langchain==0.1.2              
-llama-index==0.13.2           # Latest stable version
 
-# Optional: embeddings & vector DB
-faiss-cpu==1.7.4              
-tiktoken==0.4.0
+
+
+PyPDF2==3.1.0
+
