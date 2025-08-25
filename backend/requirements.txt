@@ -1,17 +1,17 @@
 fastapi==0.111.1
 uvicorn[standard]==0.23.2
 python-dotenv==1.0.1
-pydantic==2.6.2
+pydantic==2.7.4
 requests==2.31.0
 
 # AI APIs
 google-generativeai==0.8.5   # Gemini API
-openai==1.30.0                # OpenAI / Azure OpenAI support
 
-# LangChain + LlamaIndex
-langchain==0.1.2              
-llama-index==0.13.2           # Latest stable version
 
-# Optional: embeddings & vector DB
-faiss-cpu==1.7.4              
-tiktoken==0.4.0
+# LangChain + LlamaIndex (versions with wheels)
+langchain==0.1.2
+llama-index==0.10.30         # ✅ has prebuilt wheels
+
+# Embeddings & vector DB
+faiss-cpu==1.7.3.post3       # ✅ stable wheel (avoid 1.7.4 build issue)
+tiktoken==0.6.0              # ✅ newer wheel, no Rust needed
