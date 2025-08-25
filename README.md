@@ -43,6 +43,8 @@ Memory ensures continuity across multi-turn conversations.
 This assistant is designed for maritime professionals, port authorities, and shipping companies to improve operational efficiency and decision-making by combining AI reasoning with domain-specific tools.Maritime AI Agent Frontend Summary
 
 
+
+
 Overview
 The Maritime AI Agent Frontend is a modern, responsive web application built with React 18.2+ and Hooks, designed to interact with AI-powered maritime tools. It integrates with a backend to provide intelligent conversations, document analysis, weather monitoring, and system status tracking, tailored for maritime operations. The application uses Tailwind CSS for styling, Lucide React for icons, Axios for API calls, and is built with Create React App (CRA) using npm.
 Key Features
